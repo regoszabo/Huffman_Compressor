@@ -1,0 +1,10 @@
+cmake-build-debug/
+cmake-build-release/
+build/
+*.o
+small_input.bin
+small_compressed.bin
+small_decoded.bin
+large_input.bin
+large_compressed.bin
+large_decoded.bin
