@@ -16,7 +16,8 @@ add_executable(Huffman_Compressor
         include/Decompress.hpp
         include/Compressor.hpp
         include/BitWriter.hpp
-        include/BitReader.hpp)
+        include/BitReader.hpp
+)
 target_include_directories(Huffman_Compressor PRIVATE include)
 
 target_compile_options(Huffman_Compressor PRIVATE -Wall -Wextra -Werror -pedantic)

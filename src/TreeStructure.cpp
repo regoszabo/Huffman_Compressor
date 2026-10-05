@@ -38,6 +38,12 @@ void TreeStructure::build(const FrequencyTable& freq) {
     // gyökér
     if (!heap.empty())
         root = heap.top();
+
+    //egyszimbólumos edge-case kezelése
+    if (root && root->is_leaf) {
+        Node* dummy = new Node(root->symbol, 0);
+        root = new Node(root, dummy);
+    }
 }
 
 // Fa mélysége
